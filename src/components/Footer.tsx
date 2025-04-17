@@ -1,6 +1,6 @@
 
 import { Link } from "react-router-dom";
-import { Facebook, Instagram, YouTube, Mail, Phone, MapPin } from "lucide-react";
+import { Facebook, Instagram, Video, Mail, Phone, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Separator } from "@/components/ui/separator";
@@ -24,7 +24,7 @@ const Footer = () => {
                 <Instagram size={18} />
               </Button>
               <Button size="icon" variant="ghost" className="h-8 w-8 rounded-full">
-                <YouTube size={18} />
+                <Video size={18} />
               </Button>
             </div>
           </div>
