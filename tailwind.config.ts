@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -6,7 +7,7 @@ export default {
 		"./pages/**/*.{ts,tsx}",
 		"./components/**/*.{ts,tsx}",
 		"./app/**/*.{ts,tsx}",
-		"./src/**/*.{ts,tsx}",
+		"./src/**/*.{ts,tsx}"
 	],
 	prefix: "",
 	theme: {
@@ -61,6 +62,30 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				ice: {
+					50: '#f0f7ff',
+					100: '#e6f3ff',
+					200: '#d1e9ff',
+					300: '#b0d5ff',
+					400: '#85b8ff',
+					500: '#5992ff',
+					600: '#366df7',
+					700: '#2d58e5',
+					800: '#2745b9',
+					900: '#253c93',
+				},
+				skate: {
+					50: '#f4f6fb',
+					100: '#e8ecf7',
+					200: '#cbd7ec',
+					300: '#a1b5dc',
+					400: '#7290c9',
+					500: '#5072b5',
+					600: '#3c5a98',
+					700: '#31487c',
+					800: '#2c3e68',
+					900: '#283658',
 				}
 			},
 			borderRadius: {
@@ -84,11 +109,16 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'skating': {
+					'0%, 100%': { transform: 'translateX(0)' },
+					'50%': { transform: 'translateX(10px)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'skating': 'skating 5s ease-in-out infinite'
 			}
 		}
 	},
